@@ -1,0 +1,1118 @@
+/*
+  STYLE GUIDE STYLING 
+  Default styling for the style guide 
+*/
+
+body {
+  --nav-height: 4rem;
+  padding-top: var(--nav-height);
+  background-color: #ffffff;
+  color: white;
+  font-family: 'Satoshi';
+}
+
+.element {
+  border-top-width: 0.15rem;
+  border-top-style: solid;
+  border-top-color: #EEE;
+
+  padding: 2rem;
+  max-width: 60em;
+}
+
+.button-nav-active {
+  display: inline-block;
+  padding: 0.5em;
+  margin-right: 2.5em;
+  font-size: 0.9em;
+  color: #CD3B28;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.icon-nav-active {
+  color: #CD3B28;
+}
+
+.section-title {
+  margin: 1em 2em;
+}
+
+.section-full-bleed {
+  padding: 3em 2em;
+  margin: 3em 0 3em 0;
+
+  background-color: #ffffff;
+
+
+  border-width: 1px;
+  border-color: #EEE;
+
+  border-top-style: solid;
+  border-right-style: hidden;
+  border-left-style: hidden;
+  border-bottom-style: solid;
+}
+
+.section-content {
+  margin: 1em 2em 5em 2em;
+  max-width: 60em;
+}
+
+.section-content-center {
+  margin: 1em 2em 5em 2em;
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+  align-items: center;
+}
+
+
+h1 {
+  font-weight: 700;
+  font-size: 3em;
+
+  margin: 0.25em 0 0.25em 0;
+}
+
+h2 {
+  font-weight: 600;
+  font-size: 2.5em;
+
+  margin: 0.25em 0 0.25em 0;
+}
+
+h3 {
+  font-weight: 600;
+  font-size: 1.5em;
+
+  margin: 0.25em 0 0.25em 0;
+
+  text-transform: uppercase;
+}
+
+h4 {
+  font-weight: 600;
+  font-size: 1.25em;
+
+  margin: 0.25em 0 0.25em 0;
+}
+
+h5 {
+  font-weight: 600;
+  font-size: 1em;
+  margin: 0.5em 1em 0.5em 0;
+  text-transform: uppercase;
+  color: #CD3B28;
+}
+
+h6 {
+  font-weight: 600;
+  font-size: 1em;
+  margin: 0.5em 1em 0.5em 0;
+  text-transform: uppercase;
+  color: white;
+}
+
+p {
+  font-weight: 400;
+  font-size: 1em;
+  margin: 0;
+
+}
+
+b {
+  font-weight: 600;
+}
+
+a {
+  color: #a3a3a3;
+  text-decoration: none;
+}
+
+
+
+.color-ellipse:hover,
+.color-ellipse:focus,
+a:hover,
+a:focus {
+  text-decoration: none;
+  color: #CD3B28;
+  cursor: pointer;
+}
+
+code {
+  background-color: #EEE;
+  padding: 0.5rem;
+  display: block;
+
+}
+
+/* 
+  INTERACTIVE ELEMENTS -------------------
+*/
+
+/* Styling for the navigation button. Styling for submit and reset buttons taken inspiration from button-nav*/
+.button-nav {
+  display: inline-block;
+  padding: 0.5em;
+  margin-right: 2.5em;
+
+  font-size: 0.9em;
+
+  color: #a3a3a3;
+  font-weight: 400;
+
+  text-decoration: none;
+  transition-property: color;
+  transition-duration: 0.5s;
+}
+
+.icon-nav {
+  color: #a3a3a3;
+
+  transition-property: color;
+  transition-duration: 0.5s;
+}
+
+.breadcrumb-nav {
+  display: inline-block;
+  padding: 0.5em;
+  font-size: 0.75em;
+
+  color: #a3a3a3;
+  font-weight: 400;
+
+  text-decoration: none;
+  transition-property: color;
+  transition-duration: 0.5s;
+}
+
+.breadcrumb-nav-red {
+  display: inline-block;
+  padding: 0.5em;
+  font-size: 0.75em;
+
+  color: #CD3B28;
+  font-weight: 500;
+
+  text-decoration: none;
+  transition-property: color;
+  transition-duration: 0.5s;
+}
+
+
+/* Breadcrumb divider from https://codepen.io/Martin-Muzatko/pen/neJNNy */
+
+
+.breadcrumb-nav-red:after, 
+.breadcrumb-nav:after {
+  content: '/';
+  display: inline;
+  font-size: 1.2em;
+  color: #AAA;
+
+
+  padding: 0 .0725em 0 1.15em;
+}
+
+.icon-nav:hover,
+.icon-nav:focus,
+.button-nav:hover,
+.breadcrumb-nav:hover,
+.breadcrumb-nav:focus,
+.button-nav:focus {
+  color: #5A5A5A;
+  cursor: pointer;
+
+  transition-property: color;
+  transition-duration: 0s;
+}
+
+.button-submit {
+  display: inline-block;
+  padding: 1.25em 3em 1.25em 3em;
+
+
+  margin: 1em 0;
+
+  font-size: 0.75em;
+  font-weight: 600;
+
+  color: white;
+  background-color: #191919;
+  border: none;
+
+  text-decoration: none;
+  transition-property: background-color;
+  transition-duration: 0.25s;
+}
+
+.product-gallery-row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-bottom: 1em;
+
+}
+
+.button-submit-red:hover,
+.button-submit-red:focus {
+  background-color: #ad3120;
+  cursor: pointer;
+}
+
+.button-submit-red {
+  display: flex;
+  padding: 1.25em 3em 1.25em 3em;
+
+  justify-content: center;
+  margin: 0;
+
+  font-size: 0.75em;
+  font-weight: 600;
+
+  color: white;
+  background-color: #CD3B28;
+  border: none;
+
+  text-decoration: none;
+  transition-property: background-color;
+  transition-duration: 0.25s;
+}
+
+.button-submit:hover,
+.button-submit:focus {
+  background-color: #4d4d4d;
+  color:white;
+  cursor: pointer;
+}
+
+.button-reset {
+  display: inline-block;
+  padding: 1.25em 3em 1.25em 3em;
+
+  margin: 0;
+  margin-top: 0.75em;
+
+  font-size: 0.75em;
+  font-weight: 600;
+  color: #191919;
+
+  border-color: #191919;
+  border-width: 1px;
+  background-color: white;
+  border-style: solid;
+
+  text-decoration: none;
+  transition-property: background-color;
+  transition-duration: 0.25s;
+}
+
+.button-reset:hover,
+.button-reset:focus {
+  background-color: #fbfafa;
+  cursor: pointer;
+}
+
+.button-reset-red {
+  display: inline-block;
+  padding: 1.25em 3em 1.25em 3em;
+
+  margin: 0.5em;
+
+  font-size: 0.75em;
+  font-weight: 600;
+  color: #CD3B28;
+
+  border-color: #CD3B28;
+  border-width: 1px;
+  background-color: white;
+  border-style: solid;
+
+  text-decoration: none;
+  transition-property: background-color;
+  transition-duration: 0.25s;
+}
+
+.button-reset-red:hover,
+.button-reset-red:focus {
+  background-color: #fefaf9;
+  cursor: pointer;
+}
+
+
+.text-input-label {
+  font-size: 0.9em;
+  color: #5A5A5A;
+
+  margin: 1.5em 0 0.25em 0;
+ 
+}
+
+.text-input-field {
+  margin-top: 0.5em;
+  height: 2.25em;
+
+  width: auto;
+
+  padding-left: 1em;
+  padding-right: 1em;
+
+  font-size: 1em;
+  color: #191919;
+
+  border-width: 1px;
+  border-color: #191919;
+
+  background-color: #ffffff;
+
+  border-top-style: hidden;
+  border-right-style: hidden;
+  border-left-style: hidden;
+  border-bottom-style: groove;
+
+  text-decoration: none;
+  transition-property: background-color;
+  transition-duration: 0.25s;
+}
+
+
+.payment-text-input-field:hover,
+.payment-text-input-field:active,
+.text-input-field:hover,
+.text-input-field:focus {
+  background-color: #f7f7f7;
+  cursor: text;
+
+}
+
+
+.radio-input {
+  margin-right: 1em;
+
+  border-width: 1px;
+  border-color: #191919;
+
+  border-top-style: hidden;
+  border-right-style: hidden;
+  border-left-style: hidden;
+  border-bottom-style: groove;
+}
+
+.radio-input:hover,
+.radio-input:focus,
+.radio-text-input:hover,
+.radio-text-input:focus {
+  cursor: pointer;
+}
+
+
+.black-color {
+  color: #191919;
+}
+
+.red-color {
+  color: #CD3B28;
+}
+
+.store-name {
+  color: #CD3B28;
+  display: flex;
+
+  justify-content: center;
+}
+
+.green-color {
+  color: #4B9F31;
+}
+
+
+/* Table found from https://www.w3schools.com/css/css_table.asp */
+
+table,
+td,
+th {
+  border: 1px solid;
+  border-color: #EEE;
+
+
+  text-align: left;
+  align-items: center;
+
+  padding: 1em;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+tr:hover {
+  background-color: #f7f7f7;
+}
+
+.payment-form-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.payment-form-column-2 {
+  display: flex;
+  flex-direction: column;
+
+  width: 50%;
+}
+
+.payment-form-row {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 1em;
+
+  justify-content: space-between; 
+}
+
+.product-form-row {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+
+  justify-content: space-between;
+  padding-bottom: 1em;
+
+  flex-wrap: wrap;
+  gap: 1em;
+
+}
+
+.product-form-row-total {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  justify-content: space-between;
+  margin-top: 2em;
+  margin-bottom: 2em;
+
+  padding-top: 2em;
+
+  border-top: 1px solid #EEE;
+  border-bottom: 1px solid #EEE;
+}
+
+.product-form-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.product-form-column-2 {
+  display: flex;
+  flex-direction: column;
+  margin-left: 1.8em;
+
+}
+
+.order-quantity-container {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+
+  justify-content: space-between;
+
+  border: 1px solid;
+  border-color: #EEE;
+  padding: 0.5em 1em;
+
+  max-width: 8em;
+  margin: 1em 0;
+}
+
+/* 
+  TEXT ELEMENTS -------------------
+*/
+
+
+
+
+/* 
+  CARD from https://www.w3schools.com/howto/howto_css_product_card.asp
+*/
+
+.card {
+  /* Add shadows to create the "card" effect */
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0);
+
+  transition-property: box-shadow;
+  transition: 0.3s;
+
+  max-width: 15rem;
+
+  margin: 0 0.5em 1em 0.5em;
+
+  background-color: #ffffff;
+
+
+  border-width: 1px;
+  border-color: #EEE;
+
+  border-style: solid;
+}
+
+/* Word-wrap found from https://www.w3schools.com/cssref/css3_pr_word-wrap.php */
+
+.card-text {
+  padding: 1rem;
+  word-wrap: break-word;
+}
+
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+.newsCard {
+  /* Add shadows to create the "card" effect */
+
+  box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0);
+  transition-property: box-shadow;
+  transition: 0.3s;
+  max-width: 15rem;
+  max-height: 25rem;
+  margin: 0 0.5em;
+
+  background-color: #ffffff;
+
+  border-width: 1px;
+  border-color: #EEE;
+
+  border-style: solid;
+
+}
+
+.newsCard2 {
+  /* Add shadows to create the "card" effect */
+  box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0);
+  transition-property: box-shadow;
+  transition: 0.3s;
+  width: 40rem;
+  margin: 0 0.5em;
+  background-color: #ffffff;
+
+  border-width: 1px;
+  border-color: #EEE;
+
+  border-style: solid;
+
+  margin-bottom: 1em;
+}
+
+.newsCard2:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+/* Word-wrap found from https://www.w3schools.com/cssref/css3_pr_word-wrap.php */
+
+.newsCard-text {
+  padding: 1rem;
+  word-wrap: break-word;
+}
+
+/* On mouse-over, add a deeper shadow */
+.newsCard:hover {
+  box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+/* Styling only select borders found from https://www.w3docs.com/snippets/css/how-to-remove-and-style-the-border-outline-around-text-input-boxes-in-google-chrome.html */
+
+.navbar {
+  /*hides navbar*/
+  width: 100%;
+  height: var(--nav-height);
+            
+  position: fixed;
+  top: 0;
+  left: 0;
+  box-shadow: 0 0 0.625rem rgba(0, 0, 0, 0.2);
+  transition: transform 0.4s;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  border-width: 1px;
+  border-color: #EEE;
+  border-top-style: hidden;
+  border-right-style: hidden;
+  border-left-style: hidden;
+  border-bottom-style: solid;
+  margin: auto;
+  padding: 1em 0 1em 0;
+  z-index: 1;
+
+
+}
+.navbar--hidden {
+  transform: translateY(calc(-1.5 * var(--nav-height)));
+  box-shadow: none;
+}
+
+.navbar-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 3.75rem; 
+  background-color: white;
+  z-index: 1;
+
+}
+
+ul {
+  color: #191919;
+
+}
+
+.navbar-item {
+  transition-duration: 0.4s;
+  list-style: none;
+
+  font-size: 0.9em;
+}
+
+.hamburger {
+  display: none;
+  cursor: pointer;
+  padding: 0 3rem;
+}
+
+.bar {
+  display: block;
+  width: 1.563rem;
+  height: 0.188rem;
+  margin: 0.313rem;
+  transition: all 0.3s ease-in-out;
+  background-color: #CD3B28;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #a3a3a3;
+}
+
+.breadcrumb-links {
+  display: flex;
+  align-items: center;
+  margin: 1.5em 2em;
+  margin-top: 3rem;
+}
+
+.product-listing-row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  margin: 2em;
+
+  gap: 5em;
+  width: 90%;
+}
+
+.product-listing-column-1 {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 30em;
+
+}
+
+.product-listing-column-2 {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 45em;
+}
+
+.product-listing-column-3 {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 25em;
+}
+
+.product-listing-column-4 {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 50em;
+}
+
+.product-listing-text-column {
+  display: flex;
+  flex-direction: column;
+
+  margin: 0 4em 1em 0;
+}
+
+.product-listing-text-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  justify-content: space-between;
+  gap: 0.5em;
+  margin: 0.5em 0 0.5em 0;
+}
+
+.img-gallery-row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  justify-content: center;
+
+  margin: 1em 3em 1em 3em;
+}
+
+.hero-img,
+.img {
+  background-color: #f7f7f7;
+
+  margin: 0.25em;
+
+  transition-property: background-color;
+  transition-duration: 0.25s;
+}
+
+
+.hero-img:hover {
+  background-color: #ffffff;
+
+  cursor: zoom-in;
+}
+
+.img:hover {
+  background-color: #ffffff;
+
+  cursor: pointer;
+}
+
+
+.color-ellipse {
+  border-color: #CD3B28;
+  border-width: 1em;
+
+  margin: 1em 0 1em 0;
+}
+
+/* Flexbox for Contact us in About_us page */
+.contact {
+  height: auto;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+  align-content: center;
+}
+
+.contact p {
+  padding: 0.1rem;
+}
+
+.map {
+    height: auto;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    align-content: center;
+}
+.map img {
+  padding-left: 10rem;
+}
+
+/*These media queries are more for the special features such as buttons, hamburger menu*/
+@media (max-width:40em) {
+  .contact {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-content: center;
+  }
+
+  .button-nav {
+    display: none;
+  }
+
+  .icon-nav {
+    margin-right: 2em;
+  }
+}
+
+@media (max-width: 75rem) {
+  .hamburger {
+    display: block;
+  }
+
+  .hamburger.active{
+    background-color: white;
+  }
+  
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+    background-color: white;
+  }
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(0.5rem) rotate(45deg);
+  }
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-0.5rem) rotate(-45deg);
+  }
+  .navbar {
+    height: 4rem;
+    z-index: 1;
+  }
+  .navbar-menu {
+    position: fixed;
+    right: -100%;
+    top: 4rem;
+    gap: 0;
+    flex-direction: column;
+    background-color:white;
+    width: 10rem;
+    text-align: center;
+    transition: 0.3s;
+    padding: 0;
+  }
+
+  .navbar-item {
+    margin: 1rem 0;
+    font-size: 0.9em;
+  }
+  .navbar-menu.active {
+    left: 0;
+    margin-top: 2em;
+    background-color: white;
+  }
+
+  body {
+    --navbar-height: 4rem;
+    padding-top: var(--nav-height);
+  }
+}
+@media (min-width: 50rem) {
+  .prev, .next,.text {font-size: 11px}
+}
+
+
+@media only screen and (max-width: 700px) {
+  /*Screens smaller than 768 pixel AKA mobile devices
+  For more basic control such as text sizing*/
+  .map {
+    flex-wrap: wrap;
+  }
+  .map img {
+    padding-left: 0rem;
+    
+  }
+  .img-gallery-row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  
+    justify-content: center;
+  
+    margin: 1em 3em 1em 3em;
+  }
+  
+  .newsCard2 {
+    max-width: 15rem;
+    max-height: 25rem;
+    
+  }
+  .newsCard-text{
+    font-size: 80%;
+
+  }
+  .card-text{
+    font-size: 80%;
+
+  }
+  
+  
+  }
+
+@media only screen and (min-width: 1400px) {
+  /*Screens smaller than 1200 pixel AKA mobile devices
+  For more basic control such as text sizing*/
+
+  
+  .newsCard{
+    flex-direction: row;
+  }
+  
+  .product-gallery-row{
+    flex-basis: 33%;
+  }
+ 
+  }
+  
+
+
+  
+
+/* Flexbox for Feedback in About_us page */
+.feedback {
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-content: center;
+}
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 0rem 1rem;
+  padding-bottom: 1rem;
+  background-color: #ad3120;
+  color: white;
+}
+
+.footerCopy {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  font-size: 0.8rem;
+  padding-top: 1rem;
+  margin-top: 5rem;
+}
+
+#copyright {
+  font-size: 0.70rem;
+}
+
+.footerLink {
+  transition-duration: 0.5s;
+  color: white;
+}
+
+.footerLink:hover,
+.footerLink:focus {
+  color: #a3a3a3;
+}
+
+.footerText {
+  font-weight: lighter;
+  padding: 0rem 0.5rem;
+}
+
+.footerH1 {
+  color: white;
+  margin-bottom: 0.25rem;
+  opacity: 70%;
+  text-align: center;
+}
+/* https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_slideshow */
+.slideshow-container { 
+  max-width: 100vw;
+  height:40rem;
+  position: relative;
+  margin: auto;
+  z-index: 0;
+}
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  z-index: 0;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+  z-index: 0;
+}
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+  z-index: 0;
+}
+
+.dot:hover,.dot.activeDot {
+  background-color: #717171;
+}
+
+.active {
+  background-color: grey;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+.mySlides img{
+  width: 100%;
+  height: 40rem;
+  justify-content: center;
+  object-fit: cover;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/*https://www.youtube.com/watch?v=pbg6uLXm5gc&ab_channel=AngelaDesign*/
+#notification-area {
+  position:fixed;
+  bottom:2rem;
+  right:2rem;     
+  width:11rem;    
+  height: 10rem;
+  display:flex;
+  flex-direction:column;
+  justify-content:flex-end;
+}
+#notification-area .notification {
+  position:relative;
+  padding:1rem 0.3rem;
+  background:#111;
+  color:#f5f5f5;
+  font-family: "GeneralSans-Regular";
+  font-size: 0.9em;
+  text-align: center;
+  font-weight: lighter;
+  border-radius: 0.5rem;
+  margin:0.3rem 0rem;
+  opacity:0;
+  left:1.25rem;
+  animation:showNotification 500ms ease-in-out forwards;
+}
+@keyframes showNotification {
+  to {
+    opacity:1;
+    left:0rem;
+  }
+}
+#notification-area .notification.added {
+  background:#4B9F31;
+} 

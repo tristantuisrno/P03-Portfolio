@@ -1,0 +1,61 @@
+/*
+	Here we are declaring our fonts for use on this page, 
+	the declaration works as follows:
+
+	@font-face - tells the browser we are loading a new font
+	font-family - declares a name for this font
+	font-weight - sets a weight for this font (i.e. bold)
+	font-style - sets a style for this font (i.e. italic)
+	src - sets the different file types available for loading 
+		by different browers
+
+	Each browser tends to work with different filetypes for
+	the fonts, and as a result to ensure as broad-base support
+	as possible we load a broad base of fonts:
+
+	.eot = internet explorer browsers **
+	.woff2 = super modern browsers 
+	.woff = fairly modern browsers
+	.ttf = older browsers
+
+	** We end up having to load .eot files twice due to 
+		bugs in different IE browsers and how they load
+		font files
+*/
+
+@font-face {
+	font-family: 'Satoshi';
+	font-weight: 300; 
+	font-style: normal;
+
+	src: url('../fonts/Satoshi-Light.otf') format('opentype'),
+		url('../fonts/Satoshi-Light.ttf') format('truetype');
+}
+
+
+@font-face {
+	font-family: 'Satoshi';
+	font-weight: 400; 
+	font-style: normal;
+
+	src: url('../fonts/Satoshi-Regular.otf') format('opentype'),
+		url('../fonts/Satoshi-Regular.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Satoshi';
+	font-weight: 500; 
+	font-style: normal;
+	
+	src: url('../fonts/Satoshi-Medium.otf') format('opentype'),
+		url('../fonts/Satoshi-Medium.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Satoshi';
+	font-weight: 600; 
+	font-style: normal;
+	
+	src: url('../fonts/Satoshi-Bold.otf') format('opentype'),
+	url('../fonts/Satoshi-Bold.ttf') format('truetype');
+}

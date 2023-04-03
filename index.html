@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <title>Style Guide</title>
+
+  <!-- all css files taken from completed css basics lab, minus font changes and other elements in main.css // -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/fonts.css">
+
+  <script src="https://code.iconify.design/iconify-icon/1.0.2/iconify-icon.min.js"></script>
+
+</head>
+
+<body>
+
+  <header>
+    <section class="section-title">
+      <h1>P03 Portfolio Style Guide</h1>
+      <h2>Tristan Turisno 301302840</h2>
+
+      <nav class = "nav-links">
+        <a href="#interactive_elements">Interactive Elements</a>
+        <a href="#text_elements">Text Elements</a>
+        <a href="#combined_elements">Combined Elements</a>
+        <a href="#brand_components">Brand Components</a>
+        <a href="#citations">Citations</a><br><br>
+      </nav>
+    </section>
+  </header>
+
+
+  <!-- INTERACTIVE ELEMENTS SECTION // -->
+  <section id="interactive_elements">
+    <h2 class="element">Interactive Elements</h2>
+
+
+    <section class="element">
+      <h3>In-text link</h3>
+
+      <h4>Sample code:</h4>
+      <code>&lt;p&gt; Hi, I'm an &lt;a href=" ">in-text link&lt;/a&gt;.&lt;/p&gt;</code><br><br>
+
+      <h4>Rendered element:</h4><br>
+      <p>Hi, I'm an <a href="#interactive_elements">in-text link</a>.</p>
+    </section>
+
+
+    <!-- Default Button styling section -->
+    <section class="element">
+
+      <h3>Navigation Link</h3>
+
+      <h4>CSS selector:</h4><br>
+      <p>.button-nav</p><br><br>
+
+      <h4>Sample code:</h4><br>
+      <code>&lt;a class="button-nav"&gt;NAVIGATION&lt;/a&gt;</code><br><br>
+
+      <h4>Rendered element:</h4><br>
+      <a class="button-nav">Navigation</a>
+    </section>
+
+
+    <section class="element">
+      <h3>Buttons</h3>
+      <h4>CSS selector:</h4><br>
+      <p>.button</p>
+      <p>.button-primary</p><br><br>
+
+      <h4>Sample code:</h4><br>
+      <code>
+        &lt;button class="button button1"&gt; Button 1 &lt;/button&gt;<br>
+        &lt;button class="button button2"&gt; Button 2 &lt;/button&gt;
+      </code><br><br>
+
+      <h4>Rendered element:</h4><br>
+      <button class="button button1">Button 1</button>
+      <button class="button button2">Button 2</button>
+    </section>
+
+
+    <section class="element">
+      <h3>Text Input Field with Label</h3>
+
+      <h4>CSS selector:</h4><br>
+      <p>.text-input-label</p>
+      <p>.input-field</p><br><br>
+
+      <h4>Sample code:</h4>
+      <code>&lt;label class = "text-input-label" for="i-field">Label&lt;/label&gt;<br>
+        &lt;input type="text" placeholder="Type something here" class="text-input-field" id="i-field" name="input"&gt;</code><br><br>
+
+      <h4>Rendered element:</h4><br>
+      <label class="text-input-label" for="i-field">Label</label><br>
+      <input type="text" placeholder="Type something here" class="text-input-field" id="i-field" name="input">
+    </section>
+
+
+    <section class="element">
+      <h3>Radio Button with Label</h3>
+
+      <h4>CSS selector:</h4><br>
+      <p>.radio-input</p>
+      <p>.radio-text-input</p><br><br>
+
+      <h4>Sample code:</h4><br>
+      <code>&lt;input type="radio" class = "radio-input"  id="radio-input" name="input"&gt;<br>
+        &lt;label class = "radio-text-input" for="radio-input">Label&lt;/label&gt;</code><br><br>
+
+      <h4>Rendered element:</h4><br>
+      <input type="radio" class="radio-input" id="radio-input" name="input">
+      <label class="radio-text-input" for="radio-input">Label</label>
+
+    </section>
+
+
+    <section class="element">
+      <h3>Image as a Link</h3>
+
+      <h4>CSS selector:</h4><br>
+      <p>.img</p><br><br>
+
+      <h4>Sample code:</h4><br>
+      <code>
+        &lt;a href=&quot;https://tristanturisno.wixsite.com/portfolio&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;logo.png&quot; class=&quot;img&quot;
+          alt=&quot;Tristan Turisno Logo&quot; style=&quot;width:100%&quot;&gt;&lt;/a&gt;</code><br><br>
+
+      <h4>Rendered element:</h4><br>
+      <a href="https://tristanturisno.wixsite.com/portfolio" target="_blank"><img src="img/logo.png" class="img"
+          alt="Tristan Turisno Logo" style="width:5rem"></a>
+    </section>
+  </section>
+
+
+  <section id="text_elements">
+    <h2 class="element">Text Elements</h2>
+
+    <section class="element">
+      <h3>Headings</h3>
+
+      <h1>Header 1</h1>
+      <h2>Header 2</h2>
+      <h3>Header 3</h3>
+      <h4>Header 4</h4>
+      <h5>Header 5</h5>
+    </section>
+
+    <section class="element">
+      <h3>Paragraphs</h3>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque iaculis lectus et lorem efficitur
+        porttitor. Fusce feugiat hendrerit commodo. Nam ac ornare nisi. Quisque malesuada nisi eu interdum hendrerit.
+        Nam at elit eros. Donec imperdiet elit dolor, a pulvinar orci pellentesque quis. Pellentesque ultrices orci
+        vel diam tempus, nec pellentesque tortor consequat. Nam fringilla sapien augue. Donec maximus mi at neque
+        dictum rutrum. Curabitur dictum sit amet tortor a viverra. Suspendisse at varius eros, in porta dolor. Proin
+        at convallis purus, in scelerisque quam.</p>
+    </section>
+
+    <section class="element">
+      <h3>Numbered Lists</h3>
+      <ol type="1">
+        <li>Item </li>
+        <li>Item</li>
+        <li>Item</li>
+      </ol>
+    </section>
+
+  </section>
+  <!-- // TEXT ELEMENTS SECTION -->
+
+
+
+  <!-- COMBINED ELEMENTS SECTION // -->
+  <section id="combined_elements">
+    <h2 class="element">Combined Elements</h2>
+
+    <section class="element">
+      <h3>Main Navigation</h3>
+
+      <h4>CSS selector:</h4><br>
+      <p>.button-nav</p><br>
+
+      <h4>Sample code:</h4><br>
+      <code>
+        &lt;div class=&quot;nav-links&quot;&gt;<br>
+        &lt;a class=&quot;button-nav&quot;&gt;Projects&lt;/a&gt;<br>
+        &lt;a class=&quot;button-nav&quot;&gt;About 2&lt;/a&gt;<br>
+        &lt;a class=&quot;button-nav&quot;&gt;Contact 3&lt;/a&gt;<br>
+        &lt;/div&gt;
+      </code><br>
+
+      <h4>Rendered element:</h4><br>
+        <div class="nav-links">
+          <a class="button-nav">Projects</a>
+          <a class="button-nav">About</a>
+          <a class="button-nav">Contact</a>
+        </div> 
+    </section>
+  </section>
+
+  <section id="basic_branding">
+    <h2 class="element">Basic Branding</h2>
+
+    <section class="element">
+      <h3>Bio</h3>
+      <p>Hi my name is Tristan and I am currently an undergraduate student, specializing in UX/UI design and pursuing a minor in Business Administration at Simon Fraser University's School of Interactive Arts and Technology.
+
+        Having been a content creator in YouTube's partner program at a young age, I naturally had a fascination for producing and marketing videos. Being self-taught for over seven years in video editing and graphic design, I found myself experimenting most with storytelling and creating graphics to best engage audiences.​
+        
+        Upon joining SFU's SIAT program, I found that aside from being strictly used for advertising, design can be a way of communication and aiding audiences in achieving particular goals. With skills in UX/UI design, graphic design, and motion graphics I seek to understand users and their complexities to innovate, inspire, and problem-solve.</p><br>
+    </section>
+  </section>
+
+  <section id="brand_components">
+    <h2 class="element">Brand Components</h2>
+
+    <section class="element">
+      <h3>Font</h3>
+      <p><a href="https://www.fontshare.com/fonts/satoshi" target="_blank">Satoshi</a></p>
+    </section>
+
+    <section class="element">
+      <h3>Color Palette</h3>
+      <img src="img/color-palette.png" alt="Color Palette" style="width:100%;"><br><br>
+
+      <p>The majority of the website is intended to be fairly neutral to accomodate for the variety of colors and styles used in my projects. However, azure blue will be used as the primary accent color. </p>
+    </section>
+  </section>
+
+
+
+</body>
+
+</html>

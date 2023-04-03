@@ -1,0 +1,266 @@
+$primaryColor: #4D80E4;
+$backgroundColor: #f2f2f2;
+$black: #191919;
+$greyText: #8E8E8E;
+
+@mixin button($color) {
+    display: inline-block;
+    padding: 1.25em 3em 1.25em 3em;
+    margin: 1em 0;
+
+    font-size: 0.75em;
+    font-weight: 500;
+    text-transform: uppercase;
+
+
+    color: $backgroundColor;
+    background-color: $color;
+    border: none;
+
+    text-decoration: none;
+    transition-property: background-color;
+    transition-duration: 0.25s;
+}
+
+
+body {
+    --nav-height: 4rem;
+    padding-top: var(--nav-height);
+
+    background-color: white;
+    font-family: 'Satoshi';
+}
+
+h1 {
+    font-weight: 600;
+    font-size: 3em;
+
+    margin: 0.25em 0 0.25em 0;
+}
+
+h2 {
+    font-weight: 500;
+    font-size: 2.5em;
+
+    margin: 0.25em 0 0.25em 0;
+}
+
+h3 {
+    font-weight: 500;
+    font-size: 1.5em;
+
+    margin: 0.25em 0 0.25em 0;
+
+    text-transform: uppercase;
+}
+
+h4 {
+    font-weight: 500;
+    font-size: 1.25em;
+
+    margin: 0.25em 0 0.25em 0;
+}
+
+h5 {
+    font-weight: 500;
+    font-size: 1em;
+    margin: 0.5em 1em 0.5em 0;
+    text-transform: uppercase;
+
+    color: $primaryColor;
+}
+
+p {
+    font-weight: 400;
+    font-size: 1em;
+    color: $greyText;
+
+
+    margin: 0;
+}
+
+a {
+    color: #a3a3a3;
+    text-decoration: none;
+
+    transition-property: color;
+    transition-duration: 0.25s;
+}
+
+a:hover {
+    color: $primaryColor;
+}
+
+
+code {
+    background-color: #EEE;
+    padding: 0.5rem;
+    display: block;
+}
+
+.navigation-name {
+    font-size: 1.25em;
+    font-weight: 500;
+
+    color: $black;
+}
+
+.button-nav {
+    font-size: 1em;
+    font-weight: 400
+}
+
+.button1 {
+    @include button($black);
+}
+
+.button1:hover {
+    background-color: lighten($black, 10%);
+    color: white;
+}
+
+.button2 {
+    @include button($primaryColor);
+}
+
+.button2:hover {
+    background-color: lighten($primaryColor, 10%);
+    color: white;
+}
+
+
+.nav-links {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+
+
+    font-weight: 400;
+    gap: 1.5em;
+    padding-right: 4.25em;
+}
+
+.navbar {
+    /*hides navbar*/
+    width: 100%;
+    height: var(--nav-height);
+
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    transition: transform 0.4s;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    border-width: 1px;
+    border-color: #EEE;
+    border-top-style: hidden;
+    border-right-style: hidden;
+    border-left-style: hidden;
+    border-bottom-style: solid;
+
+    margin: auto;
+    padding: 1em 2em;
+    z-index: 1;
+}
+
+.text-input-field {
+    margin-top: 0.5em;
+    height: 2.25em;
+
+    width: auto;
+
+    padding-left: 1em;
+    padding-right: 1em;
+
+    font-size: 1em;
+    color: #191919;
+
+    border-width: 1px;
+    border-color: #191919;
+
+    background-color: #ffffff;
+
+    border-top-style: hidden;
+    border-right-style: hidden;
+    border-left-style: hidden;
+    border-bottom-style: groove;
+
+    text-decoration: none;
+    transition-property: background-color;
+    transition-duration: 0.25s;
+}
+
+.text-input-field:hover,
+.text-input-field:focus {
+    background-color: #f7f7f7;
+    cursor: text;
+
+}
+
+
+.radio-input {
+    margin-right: 1em;
+  
+    border-width: 1px;
+    border-color: #191919;
+  
+    border-top-style: hidden;
+    border-right-style: hidden;
+    border-left-style: hidden;
+    border-bottom-style: groove;
+  }
+  
+  .radio-input:hover,
+  .radio-input:focus,
+  .radio-text-input:hover,
+  .radio-text-input:focus {
+    cursor: pointer;
+  }
+
+
+.element {
+    border-top-width: 0.15rem;
+    border-top-style: solid;
+    border-top-color: #EEE;
+
+    padding: 2rem;
+    max-width: 60em;
+}
+
+.section-title {
+    margin: 1em 2em;
+}
+
+.section-full-bleed {
+    padding: 3em 2em;
+    margin: 3em 0 3em 0;
+
+    background-color: #ffffff;
+
+
+    border-width: 1px;
+    border-color: #EEE;
+
+    border-top-style: solid;
+    border-right-style: hidden;
+    border-left-style: hidden;
+    border-bottom-style: solid;
+}
+
+.section-content {
+    margin: 1em 2em 5em 2em;
+    max-width: 60em;
+}
+
+.section-content-center {
+    margin: 1em 2em 5em 2em;
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+}
