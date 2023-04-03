@@ -1,30 +1,35 @@
-body, html {
+body,
+html {
   background-color: #f2f2f2;
   font-family: "Satoshi";
   margin: 0;
   height: 100%;
 }
 
+.black {
+  color: #191919;
+}
+
 .white {
   color: #FFF;
+}
+
+.grey {
+  color: #8E8E8E;
 }
 
 h1 {
   font-weight: 500;
   font-size: 5em;
+  margin: 0.25em 0;
   margin: 0;
+  line-height: 1em;
 }
 
 h2 {
   font-weight: 500;
   font-size: 2.5em;
-  margin: 0.25em 0 0.25em 0;
-}
-
-h2 {
-  font-weight: 500;
-  font-size: 2.5em;
-  margin: 0.25em 0 0.25em 0;
+  margin: 0.25em 0;
 }
 
 h3 {
@@ -43,7 +48,7 @@ h4 {
 h5 {
   font-weight: 500;
   font-size: 1em;
-  margin: 0.5em 1em 0.5em 0;
+  margin: 3.5em 1em 0.5em 0;
   text-transform: uppercase;
   color: #4D80E4;
 }
@@ -65,6 +70,13 @@ a {
 a:hover {
   color: #4D80E4;
   cursor: pointer;
+}
+
+.blue-spacer {
+  background-color: #4D80E4;
+  margin: 1em 1em 1em 0.25em;
+  width: 5em;
+  height: 0.25em;
 }
 
 code {
@@ -182,60 +194,108 @@ code {
   margin: 1em 2em;
 }
 
-.section-full-bleed {
-  padding: 3em 2em;
-  margin: 3em 0 3em 0;
-  background-color: #ffffff;
-  border-width: 1px;
-  border-color: #EEE;
-  border-top-style: solid;
-  border-right-style: hidden;
-  border-left-style: hidden;
-  border-bottom-style: solid;
-}
-
-.section-content {
-  padding: 1em 2em 5em 2em;
-  background: #FFF;
-  height: 100%;
-}
-
-.section-content-center {
-  padding: 1em 2em 5em 2em;
+.section-about {
+  padding: 5em 2em;
   display: flex;
   flex-direction: column;
-  background-image: url(../img/portfolio-hero.jpg);
-  background-size: cover;
+  background-image: url(../img/me.png);
+  background-size: contain;
   background-repeat: no-repeat;
-  background-position: center center;
+  background-position: right;
+  background-color: #fff;
   height: 100%;
-  justify-content: center;
-  align-items: center;
+  justify-content: left;
+  align-items: left;
 }
 
-/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
-@media screen and (max-width: 600px) {
-  .topnav a:not(:first-child) {
-    display: none;
+.section-hero {
+  padding: 5em 2em;
+  height: 100%;
+  background-color: #f2f2f2;
+}
+
+.section-projects {
+  padding: 5em 2em;
+  height: 100%;
+  background-color: #f2f2f2;
+  height: auto;
+}
+
+.section-contact {
+  padding: 5em 2em;
+  height: 100%;
+  background-color: white;
+}
+
+.row-hero {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  bottom: 17.5em;
+  padding: 1em;
+  margin-top: 5em;
+}
+
+.column-4 {
+  display: flex;
+  flex-direction: column;
+  max-width: 10em;
+  flex: 25%;
+  margin-bottom: 1em;
+}
+
+.project-preview {
+  display: flex;
+  flex-flow: column wrap;
+  align-content: flex-end;
+}
+
+.project-preview-img {
+  margin-top: 2.5em;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 25em;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 70%;
+  justify-content: space-between;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+.project-preview-column {
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (max-width: 1111px) {
+  .section-about {
+    background-image: none;
   }
-  .topnav a.icon {
-    float: right;
-    display: block;
+  .column-4 {
+    flex: 50%;
+  }
+  .column {
+    width: 70%;
   }
 }
-/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
-@media screen and (max-width: 600px) {
-  .topnav.responsive {
-    position: relative;
+@media screen and (max-width: 620px) {
+  .section-about {
+    background-image: none;
   }
-  .topnav.responsive a.icon {
-    position: absolute;
-    right: 0;
-    top: 0;
+  .column-4 {
+    flex: 50%;
   }
-  .topnav.responsive a {
-    float: none;
-    display: block;
-    text-align: left;
+  .column {
+    width: 100%;
   }
 }/*# sourceMappingURL=style.css.map */

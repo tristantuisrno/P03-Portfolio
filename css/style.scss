@@ -21,39 +21,45 @@ $greyText: #8E8E8E;
     transition-property: background-color;
     transition-duration: 0.25s;
 }
- 
-body, html {
+
+body,
+html {
     background-color: $backgroundColor;
     font-family: 'Satoshi';
 
     margin: 0;
-    height:100%
+    height: 100%
 }
 
-.white{
+.black {
+    color: #191919;
+}
+
+.white {
     color: #FFF;
+}
+
+.grey {
+    color: #8E8E8E;
 }
 
 h1 {
     font-weight: 500;
     font-size: 5em;
 
+    margin: 0.25em 0;
+
     margin: 0;
+    line-height: 1em;
 }
 
 h2 {
     font-weight: 500;
     font-size: 2.5em;
 
-    margin: 0.25em 0 0.25em 0;
+    margin: 0.25em 0;
 }
 
-h2 {
-    font-weight: 500;
-    font-size: 2.5em;
-
-    margin: 0.25em 0 0.25em 0;
-}
 
 h3 {
     font-weight: 500;
@@ -74,7 +80,7 @@ h4 {
 h5 {
     font-weight: 500;
     font-size: 1em;
-    margin: 0.5em 1em 0.5em 0;
+    margin: 3.5em 1em 0.5em 0;
     text-transform: uppercase;
 
     color: $primaryColor;
@@ -101,6 +107,19 @@ a:hover {
     color: $primaryColor;
     cursor: pointer;
 }
+
+
+.blue-spacer {
+    background-color: $primaryColor;
+    margin: 1em 1em 1em 0.25em;
+
+
+    width: 5em;
+    height: 0.25em;
+}
+
+
+
 
 
 code {
@@ -208,80 +227,133 @@ code {
     max-width: 60em;
 }
 
-
 .section-title {
     margin: 1em 2em;
 }
 
-.section-full-bleed {
-    padding: 3em 2em;
-    margin: 3em 0 3em 0;
-
-    background-color: #ffffff;
-
-
-    border-width: 1px;
-    border-color: #EEE;
-
-    border-top-style: solid;
-    border-right-style: hidden;
-    border-left-style: hidden;
-    border-bottom-style: solid;
-}
-
-.section-content {
-    padding: 1em 2em 5em 2em;
-    
-    height:100%;
-}
-
-.section-content-center {
-    padding: 1em 2em 5em 2em;
+.section-about {
+    padding: 5em 2em;
     display: flex;
     flex-direction: column;
 
-    background-image: url(../img/portfolio-hero.jpg);
-    background-size:cover;
-    background-repeat:no-repeat;
-    background-position:center center;
+    background-image: url(../img/me.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right;
+
+    background-color: #fff;
 
 
-    height:100%;
+    height: 100%;
 
-    justify-content: center;
-    align-items: center;
+    justify-content: left;
+    align-items: left;
 }
 
 
 
+@mixin section($color){
+    padding: 5em 2em;
+    height: 100%;
 
-/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
-@media screen and (max-width: 600px) {
-    .topnav a:not(:first-child) {
-        display: none;
+    background-color: $color;
+}
+
+.section-hero {
+    @include section($backgroundColor);
+}
+
+.section-projects {
+    @include section($backgroundColor);
+    height: auto;
+}
+
+.section-contact {
+    @include section(white);
+}
+
+.row-hero {
+    display: flex;
+    flex-direction: row;
+
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    bottom: 17.5em;
+    padding: 1em;
+
+    margin-top: 5em;
+}
+
+.column-4 {
+    display: flex;
+    flex-direction: column;
+
+    max-width: 10em;
+    flex: 25%;
+
+    margin-bottom: 1em;
+}
+
+.project-preview {
+    display: flex;
+    flex-flow: column wrap;
+
+    align-content: flex-end;
+}
+
+.project-preview-img {
+    margin-top: 2.5em;
+    object-fit: cover;
+    height: 25em;
+  }
+
+.row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 70%;
+
+    justify-content: space-between;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+
+    width: 50%;
+}
+
+
+.project-preview-column {
+    display: flex;
+    flex-direction: column;
+}
+
+@media screen and (max-width: 1111px) {
+    .section-about {
+        background-image: none;
     }
 
-    .topnav a.icon {
-        float: right;
-        display: block;
+    .column-4 {
+        flex: 50%;
+    }
+
+    .column {
+        width: 70%;
     }
 }
 
-/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
-@media screen and (max-width: 600px) {
-    .topnav.responsive {
-        position: relative;
+@media screen and (max-width: 620px) {
+    .section-about {
+        background-image: none;
     }
 
-    .topnav.responsive a.icon {
-        position: absolute;
-        right: 0;
-        top: 0;
+    .column-4 {
+        flex: 50%;
     }
 
-    .topnav.responsive a {
-        float: none;
-        display: block;
-        text-align: left;
+    .column {
+        width: 100%;
     }
 }

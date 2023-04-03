@@ -11,6 +11,9 @@
     <link rel="stylesheet" href="css/fonts.css">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script src="https://code.iconify.design/iconify-icon/1.0.2/iconify-icon.min.js"></script>
+
 </head>
 
 <body>
@@ -24,13 +27,13 @@
                 </div>
                 <ul class="nav-menu">
                     <li class="nav-item">
-                        <a href="#" class="nav-link">About</a>
+                        <a href="#about" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#projects" class="nav-link">Projects</a>
                     </li>
                     <li class="nav-item">
                         <a href="#" class="nav-link">Contact</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link">Projects</a>
                     </li>
                 </ul>
                 <div class="hamburger">
@@ -42,26 +45,137 @@
         </div>
     </header>
 
-    <script src="js/navbar.js"></script>
-
-
-    <section class="section-content" id="hero">
+    <section class="section-hero" id="hero">
         <h1>Tristan Turisno</h1>
         <h2>UX/UI Designer, based in Vancouver, BC.</h2>
+        <div class="blue-spacer">
+            <p></p>
+        </div>
 
-        <a href="#projects" class="button button2">Projects</a>
+        <a href="#about"><iconify-icon icon="material-symbols:keyboard-double-arrow-down" style="color: #4d80e4;"
+                width="5em"></iconify-icon></a>
+
+
+        <div class="row-hero">
+            <div class="column-4">
+                <p>Designer focused on User Experience and Interaction.</p>
+            </div>
+
+            <div class="column-4">
+                <h4>Learn More</h4>
+                <a href="#projects">Projects</a>
+            </div>
+
+            <div class="column-4">
+                <h4>Connect</h4>
+                <a href="https://www.linkedin.com/in/tristan-turisno-6884a41b5/" target="_blank">LinkedIn</a>
+                <a href="https://www.instagram.com/tristanbydesign/" target="_blank">Instagram</a>
+            </div>
+
+            <div class="column-4">
+                <h4>Contact</h4>
+                <p>tristan_turisno@sfu.ca</p>
+                <p>778-809-8797</p>
+            </div>
+        </div>
 
     </section>
 
-    <section class="section-content-center" id="projects">
-        <h2>Hi, my name is Tristan</h2>
-        <a href="about_us.html" class="button-submit">LEARN MORE</a>
+    <script src="js/navbar.js"></script>
 
+    <section class="section-about" id="about">
+        <div class="column">
+            <h2>Hi, my name is Tristan.</h2>
+            <div class="blue-spacer">
+                <p></p>
+            </div>
+
+            <p>Hi my name is Tristan and I am currently an undergraduate student, specializing in UX/UI
+                design and pursuing a minor in Business Administration at Simon Fraser University's School of
+                Interactive Arts
+                and Technology.</p><br>
+
+            <p>
+                Having been a content creator in YouTube's partner program at a young age, I naturally had a fascination
+                for producing and marketing videos. Being self-taught for over seven years in video editing and graphic
+                design, I found myself experimenting most with storytelling and creating graphics to best engage
+                audiences.</p><br>
+
+            <p>
+                Upon joining SFU's SIAT program, I found that aside from being strictly used for advertising, design can
+                be a way of communication and aiding audiences in achieving particular goals. With skills in UX/UI
+                design,
+                graphic design, and motion graphics I seek to understand users and their complexities to innovate,
+                inspire, and problem-solve.</p><br>
+        </div>
+    </section>
+
+    <section class="section-projects" id="projects">
+        <h2>Projects</h2>
+        <div class="blue-spacer">
+            <p></p>
+        </div>
+
+        <h5>01-02</h5>
+        <div class="project-preview">
+            <div class="row">
+                <div class="project-preview-column">
+                    <h3>Grid Rack</h3>
+                    <h4>Personal Closet Tracker</h4>
+                </div>
+
+                <div class="project-preview-column">
+                    <p>2022</p>
+                    <p>UX/UI Design</p>
+                    <p>Concept</p>
+                </div>
+            </div>
+            <a href="#"><img src="img/gridrack.jpg" class="project-preview-img" alt="Grid Rack Project Preview"
+                    style="width:100%"></a>
+        </div>
+
+
+        <h5>02-02</h5>
+        <div class="project-preview">
+            <div class="row">
+                <div class="project-preview-column">
+                    <h3>Grid Rack</h3>
+                    <h4>Personal Closet Tracker</h4>
+                </div>
+
+                <div class="project-preview-column">
+                    <p>2022</p>
+                    <p>UX/UI Design</p>
+                    <p>Concept</p>
+                </div>
+            </div>
+            <a href="#"><img src="img/gridrack.jpg" class="project-preview-img" alt="Grid Rack Project Preview"
+                    style="width:100%"></a>
+        </div>
     </section>
 
 
+    <section class="section-contact" id="contact">
+        <h2>Contact</h2>
+        <h4 class="grey">Ready to discuss your UX needs? Let's connect.</h4>
+        <div class="blue-spacer">
+            <p></p>
+        </div>
 
+        <div class="column">
+            <input type="text" placeholder="Your Name" class="text-input-field" id="i-field" name="input">
 
+            <input type="text" placeholder="Email" class="text-input-field" id="i-field" name="input">
+
+            <input type="text" placeholder="Brief description of inquiry" class="text-input-field" id="i-field"
+                name="input">
+
+            <input id="uxMessage" validation="required" name="uxMessage" type="text" />
+
+            $("#uxMessage").replaceWith('<textarea id="uxMessage" name="uxMessage"></textarea>');
+        </div>
+        <a class="button button2">Submit</a>
+    </section>
 </body>
 
 
