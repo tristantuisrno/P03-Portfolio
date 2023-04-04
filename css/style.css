@@ -97,7 +97,7 @@ a:hover {
 }
 
 code {
-  background-color: #EEE;
+  background-color: #fff;
   padding: 0.5rem;
   display: block;
 }
@@ -208,7 +208,7 @@ code {
 .element {
   border-top-width: 0.15rem;
   border-top-style: solid;
-  border-top-color: #EEE;
+  border-top-color: #8E8E8E;
   padding: 2rem;
   max-width: 60em;
 }
@@ -228,7 +228,6 @@ code {
   background-color: #fff;
   height: 100%;
   justify-content: left;
-  align-items: left;
 }
 
 .section-hero {
@@ -352,7 +351,7 @@ code {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin-bottom: 1em;
+  margin: 1.25em 0;
 }
 
 .column-paragraph-lone {
@@ -373,6 +372,7 @@ code {
   display: flex;
   flex-direction: column;
   width: 50%;
+  width: 65%;
   margin: 3em 0 1em 0;
 }
 
@@ -408,5 +408,14 @@ code {
   }
   .column {
     width: 100%;
+  }
+}
+@media screen and (max-width: 720px) {
+  .contact-column {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    width: 100%;
+    margin: 3em 0 1em 0;
   }
 }/*# sourceMappingURL=style.css.map */

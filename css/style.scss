@@ -48,7 +48,7 @@ html {
     color: #8E8E8E;
 }
 
-.hero-name{
+.hero-name {
     font-size: 5em;
 }
 
@@ -102,7 +102,7 @@ p {
     margin: 0;
 }
 
-.figure-caption{
+.figure-caption {
     font-weight: 400;
     font-size: 1em;
     color: $greyText;
@@ -113,7 +113,7 @@ p {
     margin-top: 1.5em;
 }
 
-video{
+video {
     width: auto;
     height: 30em;
 
@@ -148,7 +148,7 @@ a:hover {
 
 
 code {
-    background-color: #EEE;
+    background-color: #fff;
     padding: 0.5rem;
     display: block;
 }
@@ -245,7 +245,7 @@ code {
 .element {
     border-top-width: 0.15rem;
     border-top-style: solid;
-    border-top-color: #EEE;
+    border-top-color: $greyText;
 
     padding: 2rem;
     max-width: 60em;
@@ -271,11 +271,10 @@ code {
     height: 100%;
 
     justify-content: left;
-    align-items: left;
 }
 
 
-@mixin section($color){
+@mixin section($color) {
     padding: 5em 2em;
     height: 100%;
 
@@ -306,12 +305,12 @@ code {
     justify-content: left;
 }
 
-.section-project-cover-gridrack{
+.section-project-cover-gridrack {
     @include section-project-cover();
     background-image: url(../img/gridrack.jpg);
 }
 
-.section-project-cover-cheatchat{
+.section-project-cover-cheatchat {
     @include section-project-cover();
     background-image: url(../img/cheatchat.jpg);
     height: 47%
@@ -362,7 +361,7 @@ code {
     gap: 1.5em;
 }
 
-.project-description-column{
+.project-description-column {
     display: flex;
     flex-direction: column;
     max-width: 30em;
@@ -393,7 +392,7 @@ code {
 .project-preview-img {
     object-fit: cover;
     height: 25em;
-  }
+}
 
 .row {
     display: flex;
@@ -402,10 +401,10 @@ code {
 
     justify-content: space-between;
 
-    margin-bottom: 1em;
+    margin: 1.25em 0;
 }
 
-@mixin column{
+@mixin column {
     display: flex;
     flex-direction: column;
 
@@ -425,7 +424,7 @@ code {
 
 .contact-column {
     @include column;
-
+    width: 65%;
     margin: 3em 0 1em 0;
 }
 
@@ -468,5 +467,14 @@ code {
 
     .column {
         width: 100%;
+    }
+}
+
+
+@media screen and (max-width: 720px) {
+    .contact-column {
+        @include column;
+        width: 100%;
+        margin: 3em 0 1em 0;
     }
 }
