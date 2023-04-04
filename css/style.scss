@@ -102,6 +102,24 @@ p {
     margin: 0;
 }
 
+.figure-caption{
+    font-weight: 400;
+    font-size: 1em;
+    color: $greyText;
+
+    text-align: center;
+
+
+    margin-top: 1.5em;
+}
+
+video{
+    width: auto;
+    height: 30em;
+
+    margin: 3em 0;
+}
+
 a {
     color: #a3a3a3;
     text-decoration: underline;
@@ -308,6 +326,15 @@ code {
     flex-direction: column;
 }
 
+.section-project-content-grey {
+    @include section($backgroundColor);
+    padding-bottom: 2em;
+    height: auto;
+
+    display: flex;
+    flex-direction: column;
+}
+
 .section-white {
     @include section(white);
 }
@@ -341,7 +368,7 @@ code {
     display: flex;
     flex-direction: column;
 
-    max-width: 10em;
+    max-width: 13em;
     flex: 25%;
 
     margin-bottom: 1em;
