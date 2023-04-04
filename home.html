@@ -22,7 +22,7 @@
         <div class="container">
             <nav class="navbar">
                 <div class="nav-links">
-                    <a href="#"><img src="img/logo.png" alt="Tristan Turisno Logo" style="width:2.5em"></a>
+                    <a href="home.html"><img src="img/logo.png" alt="Tristan Turisno Logo" style="width:2.5em"></a>
 
                 </div>
                 <ul class="nav-menu">
@@ -33,7 +33,7 @@
                         <a href="#projects" class="nav-link">Projects</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link">Contact</a>
+                        <a href="#contact" class="nav-link">Contact</a>
                     </li>
                 </ul>
                 <div class="hamburger">
@@ -46,14 +46,14 @@
     </header>
 
     <section class="section-hero" id="hero">
-        <h1>Tristan Turisno</h1>
-        <h2>UX/UI Designer, based in Vancouver, BC.</h2>
+        <h1 class="hero-name">Tristan Turisno</h1>
+        <h2 style="margin-left: 0.1em;">UX/UI Designer, based in Vancouver, BC.</h2>
         <div class="blue-spacer">
             <p></p>
-        </div>
+        </div><br>
 
-        <a href="#about"><iconify-icon icon="material-symbols:keyboard-double-arrow-down" style="color: #4d80e4;"
-                width="5em"></iconify-icon></a>
+        <a href="#about"><iconify-icon icon="material-symbols:keyboard-double-arrow-down"
+                style="color: #4d80e4;margin-left: -1em;" width="5em"></iconify-icon></a>
 
 
         <div class="row-hero">
@@ -74,7 +74,7 @@
 
             <div class="column-4">
                 <h4>Contact</h4>
-                <p>tristan_turisno@sfu.ca</p>
+                <a href="#">tristan_turisno@sfu.ca</a>
                 <p>778-809-8797</p>
             </div>
         </div>
@@ -85,12 +85,12 @@
 
     <section class="section-about" id="about">
         <div class="column">
-            <h2>Hi, my name is Tristan.</h2>
+            <h2>Hi, my name is Tristan</h2>
             <div class="blue-spacer">
                 <p></p>
-            </div>
+            </div><br>
 
-            <p>Hi my name is Tristan and I am currently an undergraduate student, specializing in UX/UI
+            <p>...and I am currently an undergraduate student, specializing in UX/UI
                 design and pursuing a minor in Business Administration at Simon Fraser University's School of
                 Interactive Arts
                 and Technology.</p><br>
@@ -118,65 +118,73 @@
 
         <h5>01-02</h5>
         <div class="project-preview">
-            <div class="row">
-                <div class="project-preview-column">
-                    <h3>Grid Rack</h3>
-                    <h4>Personal Closet Tracker</h4>
-                </div>
+            <div class="project-preview-column">
+                <div class="row">
+                    <div class="project-preview-description-column">
+                        <h3>Grid Rack</h3>
+                        <h4>Personal Closet Tracker</h4>
+                    </div>
 
-                <div class="project-preview-column">
-                    <p>2022</p>
-                    <p>UX/UI Design</p>
-                    <p>Concept</p>
+                    <div class="project-preview-description-column">
+                        <p>2022</p>
+                        <p>UX/UI Design</p>
+                        <p>Concept</p>
+                    </div>
                 </div>
+                <a href="gridrack.html"><img src="img/gridrack.jpg" class="project-preview-img"
+                        alt="Grid Rack Project Preview" style="width:100%"></a>
             </div>
-            <a href="#"><img src="img/gridrack.jpg" class="project-preview-img" alt="Grid Rack Project Preview"
-                    style="width:100%"></a>
         </div>
-
 
         <h5>02-02</h5>
         <div class="project-preview">
-            <div class="row">
-                <div class="project-preview-column">
-                    <h3>Grid Rack</h3>
-                    <h4>Personal Closet Tracker</h4>
-                </div>
+            <div class="project-preview-column">
+                <div class="row">
+                    <div class="project-preview-description-column">
+                        <h3>Grid Rack</h3>
+                        <h4>Personal Closet Tracker</h4>
+                    </div>
 
-                <div class="project-preview-column">
-                    <p>2022</p>
-                    <p>UX/UI Design</p>
-                    <p>Concept</p>
+                    <div class="project-preview-description-column">
+                        <p>2022</p>
+                        <p>UX/UI Design</p>
+                        <p>Concept</p>
+                    </div>
                 </div>
+                <a href="#"><img src="img/gridrack.jpg" class="project-preview-img" alt="Grid Rack Project Preview"
+                        style="width:100%"></a>
             </div>
-            <a href="#"><img src="img/gridrack.jpg" class="project-preview-img" alt="Grid Rack Project Preview"
-                    style="width:100%"></a>
         </div>
     </section>
 
 
-    <section class="section-contact" id="contact">
+    <section class="section-white" id="contact">
         <h2>Contact</h2>
         <h4 class="grey">Ready to discuss your UX needs? Let's connect.</h4>
         <div class="blue-spacer">
             <p></p>
         </div>
 
-        <div class="column">
-            <input type="text" placeholder="Your Name" class="text-input-field" id="i-field" name="input">
+        <div class="contact-column">
+            <label class="text-input-label" for="fname-field">Name</label>
+            <input type="text" placeholder="Full Name" class="text-input-field" id="n-field" name="input">
 
-            <input type="text" placeholder="Email" class="text-input-field" id="i-field" name="input">
+            <label class="text-input-label" for="e-field">Email</label>
+            <input type="text" placeholder="yourname@email.com" class="text-input-field" id="e-field" name="input">
 
-            <input type="text" placeholder="Brief description of inquiry" class="text-input-field" id="i-field"
-                name="input">
-
-            <input id="uxMessage" validation="required" name="uxMessage" type="text" />
-
-            $("#uxMessage").replaceWith('<textarea id="uxMessage" name="uxMessage"></textarea>');
+            <label class="text-input-label" for="message">Message</label>
+            <textarea id="message" name="message" class="text-input-field" rows="4" cols="50"
+                placeholder="Enter Message Here"></textarea>
         </div>
         <a class="button button2">Submit</a>
-    </section>
-</body>
 
+        <a href="home.html"><iconify-icon icon="material-symbols:keyboard-double-arrow-up"
+                style="color: #4d80e4;margin-left: -1em; position:fixed; bottom:1em; right:1em;"
+                width="5em"></iconify-icon></a>
+    </section>
+
+
+
+</body>
 
 </html>

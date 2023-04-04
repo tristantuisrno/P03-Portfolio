@@ -18,9 +18,13 @@ html {
   color: #8E8E8E;
 }
 
+.hero-name {
+  font-size: 5em;
+}
+
 h1 {
   font-weight: 500;
-  font-size: 5em;
+  font-size: 4em;
   margin: 0.25em 0;
   margin: 0;
   line-height: 1em;
@@ -34,9 +38,8 @@ h2 {
 
 h3 {
   font-weight: 500;
-  font-size: 1.5em;
+  font-size: 1.75em;
   margin: 0.25em 0 0.25em 0;
-  text-transform: uppercase;
 }
 
 h4 {
@@ -62,7 +65,7 @@ p {
 
 a {
   color: #a3a3a3;
-  text-decoration: none;
+  text-decoration: underline;
   transition-property: color;
   transition-duration: 0.25s;
 }
@@ -103,6 +106,9 @@ code {
   text-decoration: none;
   transition-property: background-color;
   transition-duration: 0.25s;
+  justify-items: center;
+  text-align: center;
+  letter-spacing: 0.075em;
 }
 
 .button1:hover {
@@ -123,6 +129,9 @@ code {
   text-decoration: none;
   transition-property: background-color;
   transition-duration: 0.25s;
+  justify-items: center;
+  text-align: center;
+  letter-spacing: 0.075em;
 }
 
 .button2:hover {
@@ -140,7 +149,7 @@ code {
 }
 
 .text-input-field {
-  margin-top: 0.5em;
+  margin: 1em 0;
   height: 2.25em;
   width: auto;
   padding-left: 1em;
@@ -221,7 +230,41 @@ code {
   height: auto;
 }
 
-.section-contact {
+.section-project-cover {
+  padding: 5em 2em;
+  display: flex;
+  flex-direction: column;
+  background-image: url(../img/gridrack.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-color: #fff;
+  height: 25%;
+  justify-content: left;
+  align-items: left;
+}
+
+.section-project-title {
+  padding: 5em 2em;
+  height: 100%;
+  background-color: #f2f2f2;
+  padding-bottom: 2em;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.section-project-content {
+  padding: 5em 2em;
+  height: 100%;
+  background-color: white;
+  padding-bottom: 2em;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.section-white {
   padding: 5em 2em;
   height: 100%;
   background-color: white;
@@ -235,6 +278,16 @@ code {
   bottom: 17.5em;
   padding: 1em;
   margin-top: 5em;
+  gap: 1.5em;
+}
+
+.project-description-column {
+  display: flex;
+  flex-direction: column;
+  max-width: 30em;
+  min-width: 25em;
+  flex: 30%;
+  margin-bottom: 1em;
 }
 
 .column-4 {
@@ -252,7 +305,6 @@ code {
 }
 
 .project-preview-img {
-  margin-top: 2.5em;
   -o-object-fit: cover;
      object-fit: cover;
   height: 25em;
@@ -262,8 +314,16 @@ code {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  width: 70%;
   justify-content: space-between;
+  margin-bottom: 1em;
+}
+
+.column-paragraph-lone {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  width: auto;
+  max-width: 65em;
 }
 
 .column {
@@ -272,9 +332,23 @@ code {
   width: 50%;
 }
 
+.contact-column {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin: 3em 0 1em 0;
+}
+
 .project-preview-column {
   display: flex;
   flex-direction: column;
+  width: 70%;
+}
+
+.project-preview-description-column {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1em;
 }
 
 @media screen and (max-width: 1111px) {
@@ -288,7 +362,7 @@ code {
     width: 70%;
   }
 }
-@media screen and (max-width: 620px) {
+@media screen and (max-width: 820px) {
   .section-about {
     background-image: none;
   }

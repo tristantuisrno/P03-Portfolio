@@ -11,12 +11,7 @@ header {
 
 li {
     list-style: none;
-}
-
-a {
-    color: #8E8E8E;
-    text-decoration: none;
-}
+} 
 
 .container {  
     margin: 0 3em 0 2em;
@@ -45,6 +40,9 @@ a {
 
 .nav-link {
     transition: 0.3s ease-out;
+
+    color: #8E8E8E;
+    text-decoration: none;
 }
 
 .nav-link:hover {
