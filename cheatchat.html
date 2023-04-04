@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Cheat Chat</title>
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/slideshow.css">
+    <link rel="stylesheet" href="css/fonts.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script src="https://code.iconify.design/iconify-icon/1.0.2/iconify-icon.min.js"></script>
+</head>
+
+<body>
+    <!-- Taken from https://medium.com/@mignunez/how-to-create-a-responsive-hamburger-menu-with-html-css-javascript-4dc10a45d3 -->
+    <header>
+        <div class="container">
+            <nav class="navbar">
+                <div class="nav-links">
+                    <a href="home.html"><img src="img/logo.png" alt="Tristan Turisno Logo" style="width:2.5em"></a>
+
+                </div>
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="home.html#about" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="home.html#projects" class="nav-link">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="home.html#contact" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section class="section-project-cover-cheatchat" id="cover">
+    </section>
+
+    <section class="section-project-title">
+        <h1>Cheat Chat: A Welcome Party</h1>
+        <h2>Concept Poster Campaign</h2>
+        <div class="blue-spacer">
+            <p></p>
+        </div><br>
+
+        <a href="#"><iconify-icon icon="material-symbols:keyboard-double-arrow-down"
+                style="color: #4d80e4;margin-left: -1em;" width="5em"></iconify-icon></a>
+
+        <div class="row-hero">
+            <div class="project-description-column">
+                <p>Cheat Chat is an informative welcoming party for first-year Chinese international students in SFU's
+                    School of Interactive Arts & Technology designed to combat the dangers of plagiarism and the shared
+                    feeling of disconnect amongst first-years and international students. </p>
+
+            </div>
+
+            <div class="column-4">
+                <h4>Role</h4>
+                <p>User Researcher, Graphic Designer</p>
+            </div>
+
+            <div class="column-4">
+                <h4>Tools</h4>
+                <p>Photoshop, Illustrator</p>
+            </div>
+
+            <div class="column-4">
+                <h4>Team</h4>
+                <p>Yuqingqing (Allison) M., Ivan L., Lixin (Lily) L., Ningxuan (Mika) Z.</p>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="section-project-content" id="research">
+        <div class="column-paragraph-lone ">
+            <h2>Research</h2>
+            <h3>The Problem with SFU's Code of Academic Honesty and Good Conduct</h3><br>
+
+            <p>After analyzing SFU's <a href="https://www.sfu.ca/policies/gazette/student/s10-01.html"
+                    target="_blank">academic code</a>, we have narrowed our findings to three primary reasons why it
+                fails
+                to inform students effectively and succinctly of such conduct: unfamiliarity, inaccessibility, and
+                readability. With familiarity, we find that students may be aware of a general academic standard to be
+                followed at the university but unaware of the specifics due to infrequent exposure, typically only
+                through orientations or syllabi. With inaccessibility, we found it to be unclear where students can
+                retrieve this information on campus, while online the website is cluttered with a multitude of links,
+                easily confusing for newcomers. Such tedious processes easily disincentivizes students from actively
+                pursuing SFU's academic policies. Finally, the policies lack readability, being a large wall of text and
+                abstract in explanation. There is also an absence of examples and tutorials on the page which could have
+                aided students further.<br><br>
+
+                We decided to investigate further through the perspective of a current SFU student and a newcomer. We
+                found several commonalities behind the roots of plagiarism such as unawareness of SFU's Code of Academic
+                Honesty and Good Conduct, indifference to such policies, overconfidence, and ignorance. One reason stood
+                out to us in particular, belonging mainly with newcomers and international students: <b>cultural
+                    differences</b>.</p><br>
+
+            <h3>Brainstorming</h3><br>
+            <p>After researching a multitude of academic articles and reflecting on our group's primarily Asian heritage and experiences we found stark contrasts in Asian and Western societies. Based on the idea of Eastern collectivism versus Western individualism, we saw a clear connection between why there could be a culture shock for international students. Being a team composed of primarily Chinese international students, we decided to pursue this further, having personal connections, experiences and a curiosity for the adapting of cultures.</p><br>
+        </div>
+
+        <!-- Slideshow container from https://www.w3schools.com/howto/howto_js_slideshow.asp -->
+        <div class="slideshow-container">
+
+            <!-- Full-width images with number and caption text -->
+            <div class="mySlides fade">
+                <div class="numbertext">1 / 2</div>
+                <img src="img/brainstorm-1.png" style="width:100%; 
+                height: 30em;
+                justify-content: center;
+                object-fit: cover;">
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">2 / 2</div>
+                <img src="img/brainstorm-2.png" style="width:100%; 
+                height: 30em;
+                justify-content: center;
+                object-fit: cover;">
+            </div>
+
+            <!-- Next and previous buttons -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <br>
+
+        <!-- The dots/circles -->
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+        </div>
+    </section>
+
+    <section class="section-project-content-grey" id="problem">
+        <div class="column-paragraph-lone ">
+            <h2>Framing the Solution</h2>
+            <h3>Narrowing Our Focus</h3><br>
+            <p>A common experience that we shared was a feeling of disconnect and loneliness coming to a new school and country, not having a familiar group of people to belong to. This was particularly a hard experience for most of the members due to the drastic contrast in culture, being used to a more collectivist society as we researched earlier. With this, we decided on going forth with a welcome party-like experience for first year SIAT Chinese international students, to bring a sense of familiarity with these students while integrating an informative workshop aimed towards combatting plagiarism. Targeting our event to SIAT Chinese international students, we wanted to increase a sense of community within this demographic which in turn follows common SIAT practices, relying heavily on group projects and networking amongst students. </p><br>
+
+
+            <h3>Initial Poster Mockups</h3><br>
+
+            
+        </div>
+    </section>
+
+
+
+    <section class="section-project-content" id="design">
+        <div class="column-paragraph-lone ">
+            <h2>The Design</h2>
+            <h3>Onboarding Process</h3><br>
+
+            <p>Mobile onboarding is a critical step in introducing users to a new application. Here, users are able to
+                personalize their content based on clothing preferences and styles. This information will be used to
+                give the user a baseline of the content recommended to them later in the application.</p>
+        </div>
+        <video controls>
+            <source src="vid/onboarding.mp4" type="video/mp4">
+        </video>
+
+        <div class="column-paragraph-lone ">
+            <h3>Home Page & User Profile</h3><br>
+
+            <p>The home page begins with the user's own outfits to support the idea of reusing one's own garments as
+                "sustainable fashion." In addition, the user's following feed follows a two-column structure rather than
+                one column to draw less attention to the other user's outfit, but rather as a thumbnail to quickly view
+                as inspiration. </p>
+        </div>
+        <video controls>
+            <source src="vid/Homepage-Profile.mp4" type="video/mp4">
+        </video>
+
+
+        <div class="column-paragraph-lone ">
+            <h3>User Closet</h3><br>
+
+            <p>Users are able to customize their closets to their preferences with options to add and reconfigure the
+                order of their closet categories (ie. tops, bottoms, and shoes) and specify a numerical limit to these
+                categories.</p>
+        </div>
+        <video controls>
+            <source src="vid/Add.mp4" type="video/mp4">
+        </video>
+
+
+        <div class="column-paragraph-lone ">
+            <h3>Add New Items (via Camera & Search) & New Outfits</h3><br>
+
+            <p>Tapping the plus icon in the navigation bar triggers an overlay with three options to appear: adding a
+                new item via camera, search or adding a new outfit. This feature is highlighted and placed in the centre
+                of the navigation bar to imply that this will be one of the application's primary user features. </p>
+        </div>
+        <video controls>
+            <source src="vid/Add.mp4" type="video/mp4">
+        </video>
+
+
+        <div class="column-paragraph-lone ">
+            <h3>Explore & Search</h3><br>
+
+            <p>Staying true to reusing the clothes one already has, the item and outfit cards in the explore and search
+                pages include a section featuring items similar to ones already existing in the user's closet. </p>
+        </div>
+        <video controls>
+            <source src="vid/Search.mp4" type="video/mp4">
+        </video>
+
+        <a href="https://www.figma.com/proto/MF9KbRi9tk3UmCd46AT1BS/Grid-Rack?node-id=76-3860&scaling=scale-down&page-id=75%3A3767&starting-point-node-id=76%3A3860"
+            target="_blank" class="button button1">Working Mockup</a>
+    </section>
+
+
+    <a href="#"><iconify-icon icon="material-symbols:keyboard-double-arrow-up"
+            style="color: #4d80e4;margin-left: -1em; position:fixed; bottom:1em; right:1em;"
+            width="5em"></iconify-icon></a>
+
+
+    <script src="js/navbar.js"></script>
+    <script src="js/slideshow.js"></script>
+</body>
+
+</html>

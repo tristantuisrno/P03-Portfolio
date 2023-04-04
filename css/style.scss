@@ -291,12 +291,11 @@ code {
     height: auto;
 }
 
-.section-project-cover {
+@mixin section-project-cover() {
     padding: 5em 2em;
     display: flex;
     flex-direction: column;
 
-    background-image: url(../img/gridrack.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -305,7 +304,17 @@ code {
     height: 25%;
 
     justify-content: left;
-    align-items: left;
+}
+
+.section-project-cover-gridrack{
+    @include section-project-cover();
+    background-image: url(../img/gridrack.jpg);
+}
+
+.section-project-cover-cheatchat{
+    @include section-project-cover();
+    background-image: url(../img/cheatchat.jpg);
+    height: 47%
 }
 
 .section-project-title {
