@@ -162,6 +162,16 @@ code {
   padding-right: 4.25em;
 }
 
+.nav-links-styleguide {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  font-weight: 400;
+  gap: 1em;
+  padding-right: 4.25em;
+  justify-content: left;
+}
+
 .text-input-field {
   margin: 1em 0;
   height: 2.25em;

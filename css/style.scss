@@ -176,8 +176,7 @@ code {
     color: white;
 }
 
-
-.nav-links {
+@mixin nav-links {
     display: flex;
     justify-content: right;
     align-items: center;
@@ -186,6 +185,16 @@ code {
     font-weight: 400;
     gap: 1em;
     padding-right: 4.25em;
+}
+
+.nav-links {
+    @include nav-links();
+}
+
+
+.nav-links-styleguide {
+    @include nav-links();
+    justify-content: left;
 }
 
 .text-input-field {
@@ -283,6 +292,7 @@ code {
 
 .section-hero {
     @include section($backgroundColor);
+
 }
 
 .section-projects {
